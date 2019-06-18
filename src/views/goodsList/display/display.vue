@@ -37,6 +37,44 @@
                   >{{item.id}}</a>
                 </span>
               </div>
+              <div v-show="index==3">
+                <span v-for="(item,index4) in items4" :key="item.id" @click="spanShow4(index4)">
+                  <a
+                    :href="item.url"
+                    class="display_4"
+                    :class="{display_5:index4==ins4}"
+                  >{{item.id}}</a>
+                </span>
+              </div>
+              <div v-show="index==4">
+                <span v-for="(item,index5) in items5" :key="item.id" @click="spanShow5(index5)">
+                  <a
+                    :href="item.url"
+                    class="display_4"
+                    :class="{display_5:index5==ins5}"
+                  >{{item.id}}</a>
+                </span>
+              </div>
+
+              <div v-show="index==5">
+                <span v-for="(item,index6) in items6" :key="item.id" @click="spanShow6(index6)">
+                  <a
+                    :href="item.url"
+                    class="display_4"
+                    :class="{display_5:index6==ins6}"
+                  >{{item.id}}</a>
+                </span>
+              </div>
+
+              <div v-show="index==6">
+                <span v-for="(item,index7) in items7" :key="item.id" @click="spanShow7(index7)">
+                  <a
+                    :href="item.url"
+                    class="display_4"
+                    :class="{display_5:index7==ins7}"
+                  >{{item.id}}</a>
+                </span>
+              </div>
             </div>
           </div>
         </ul>
@@ -236,14 +274,56 @@
           <img class="hdty1" src="../../../static/images/6ty.jpg" alt>
         </div>
 
-   <div class="dzsp" v-show="ins==2">
+        <div class="dzsp" v-show="ins==2">
           <div id="sp"></div>
           <div id="bjh"></div>
-      
+
           <img class="hdty1" src="../../../static/images/1sp.jpg" alt>
           <img class="hdty1" src="../../../static/images/2sp.jpg" alt>
           <img class="hdty1" src="../../../static/images/3sp.jpg" alt>
-      
+        </div>
+
+        <div class="pjrh" v-show="ins==3">
+          <div id="qmyy"></div>
+          <div id="qm"></div>
+          <div id="dpmpj"></div>
+          <div id="pjdpm"></div>
+
+          <img class="hdty1" src="../../../static/images/1rh.jpg" alt>
+          <img class="hdty1" src="../../../static/images/2rh.jpg" alt>
+          <img class="hdty1" src="../../../static/images/3rh.jpg" alt>
+          <img class="hdty1" src="../../../static/images/4rh.jpg" alt>
+          <img class="hdty1" src="../../../static/images/5rh.jpg" alt>
+        </div>
+
+        <div class="xncx" v-show="ins==4">
+          <div id="qxcx"></div>
+          <div id="kzty"></div>
+          <div id="ltcx"></div>
+          <div id="hdcc"></div>
+          <div id="hycx"></div>
+          <div id="xndl"></div>
+
+          <img class="hdty1" src="../../../static/images/1xn.jpg" alt>
+          <img class="hdty1" src="../../../static/images/2xn.jpg" alt>
+          <img class="hdty1" src="../../../static/images/3xn.jpg" alt>
+          <img class="hdty1" src="../../../static/images/4xn.jpg" alt>
+          <img class="hdty1" src="../../../static/images/5xn.jpg" alt>
+          <img class="hdty1" src="../../../static/images/6xn.jpg" alt>
+        </div>
+
+        <div class="sbxt" v-show="ins==5">
+          <div id="dzsb"></div>
+          <div id="rlsb"></div>
+          <img class="hdty1" src="../../../static/images/1sb.jpg" alt>
+          <img class="hdty1" src="../../../static/images/2sb.jpg" alt>
+        </div>
+
+ <div class="zq" v-show="ins==6">
+          <div id="xnxs"></div>
+          <div id="zqxs"></div>
+          <img class="hdty1" src="../../../static/images/1zq.jpg" alt>
+          <img class="hdty1" src="../../../static/images/2zq.jpg" alt>
         </div>
 
       </div>
@@ -259,11 +339,19 @@ export default {
       index1: 0,
       index2: 0,
       index3: 0,
+      index4: 0,
+      index5: 0,
+      index6: 0,
+      index7: 0,
       theme2: "light",
-      ins: 3,
+      ins: 0,
       ins1: 0,
       ins2: 0,
       ins3: 0,
+      ins4: 0,
+      ins5: 0,
+      ins6: 0,
+      ins7: 0,
       items: [
         { id: "多点触控软硬件解决方案" },
         { id: "互动投影" },
@@ -292,6 +380,28 @@ export default {
       items3: [
         { id: "背光式数字沙盘", url: "#sp" },
         { id: "半景画  ", url: "#bjh" }
+      ],
+      items4: [
+        { id: "球幕影院", url: "#qmyy" },
+        { id: "球幕", url: "#qm" },
+        { id: "DLP大屏幕拼接", url: "#dpmpj" },
+        { id: "无缝等离子拼接大屏幕", url: "#pjdpm" }
+      ],
+      items5: [
+        { id: "360°全息成像", url: "#qxcx" },
+        { id: "3D空中投影", url: "#kzty" },
+        { id: "空气立体成像系统", url: "#ltcx" },
+        { id: "互动橱窗 ", url: "#hdcc" },
+        { id: "幻影成像 ", url: "#hycx" },
+        { id: "虚拟导览 ", url: "#xndl" }
+      ],
+      items6: [
+        { id: "动作识别", url: "#dzsb" },
+        { id: "人脸识别", url: "#rlsb" }
+      ],
+       items7: [
+        { id: "虚拟现实", url: "#xnxs" },
+        { id: "增强现实", url: "#zqxs" }
       ],
       header_content: [
         {
@@ -338,19 +448,19 @@ export default {
       this.ins3 = index3;
       this.index3 = index3;
     },
-       spanShow4(index4) {
+    spanShow4(index4) {
       this.ins4 = index4;
       this.index4 = index4;
     },
-       spanShow5(index5) {
+    spanShow5(index5) {
       this.ins5 = index5;
       this.index5 = index5;
     },
-       spanShow6(index6) {
+    spanShow6(index6) {
       this.ins6 = index6;
       this.index6 = index6;
     },
-       spanShow7(index7) {
+    spanShow7(index7) {
       this.ins7 = index7;
       this.index7 = index7;
     },
@@ -962,7 +1072,7 @@ export default {
       }
     }
 
-.dzsp {
+    .dzsp {
       width: 1015px;
       float: left;
       height: 3400px;
@@ -1003,7 +1113,161 @@ export default {
         position: absolute;
         top: 2700px;
       }
-    
+    }
+    .pjrh {
+      width: 1015px;
+      float: left;
+      height: 3400px;
+      margin-right: 25px;
+      // background: red;
+      // .content_1 {
+      //   width: 1015px;
+      //   height: 961px;
+      //   background: rgba(255, 252, 252, 1);
+      //   box-shadow: 0px 2px 6px 0px rgba(173, 173, 173, 0.4);
+      //   border-radius: 10px;
+      //   padding-top: 40px;
+      //   padding-left: 49px;
+      //   margin-bottom: 80px;
+      //   .content_2 {
+      //     display: block;
+      //     width: 868px;
+      //     height: 112px;
+      //     font-size: 18px;
+      //     font-family: PingFang-SC-Regular;
+      //     font-weight: 400;
+      //     color: rgba(38, 32, 34, 1);
+      //   }
+      // }
+      .hdty1 {
+        background: rgba(255, 252, 252, 1);
+        box-shadow: 0px 2px 6px 0px rgba(173, 173, 173, 0.4);
+        border-radius: 10px;
+        margin-bottom: 40px;
+        // border: none;
+        // padding: 0;
+      }
+      #qmyy {
+        position: absolute;
+        top: 900px;
+      }
+      #qm {
+        position: absolute;
+        top: 1400px;
+      }
+      #dpmpj {
+        position: absolute;
+        top: 2030px;
+      }
+      #pjdpm {
+        position: absolute;
+        top: 2700px;
+      }
+    }
+
+    .xncx {
+      width: 1015px;
+      float: left;
+      // height: 3400px;
+      margin-right: 25px;
+      // background: red;
+      // .content_1 {
+      //   width: 1015px;
+      //   height: 961px;
+      //   background: rgba(255, 252, 252, 1);
+      //   box-shadow: 0px 2px 6px 0px rgba(173, 173, 173, 0.4);
+      //   border-radius: 10px;
+      //   padding-top: 40px;
+      //   padding-left: 49px;
+      //   margin-bottom: 80px;
+      //   .content_2 {
+      //     display: block;
+      //     width: 868px;
+      //     height: 112px;
+      //     font-size: 18px;
+      //     font-family: PingFang-SC-Regular;
+      //     font-weight: 400;
+      //     color: rgba(38, 32, 34, 1);
+      //   }
+      // }
+      .hdty1 {
+        background: rgba(255, 252, 252, 1);
+        box-shadow: 0px 2px 6px 0px rgba(173, 173, 173, 0.4);
+        border-radius: 10px;
+        margin-bottom: 40px;
+        // border: none;
+        // padding: 0;
+      }
+      #qxcx {
+        position: absolute;
+        top: 0;
+      }
+      #kzty {
+        position: absolute;
+        top: 980px;
+      }
+      #ltcx {
+        position: absolute;
+        top: 2100px;
+      }
+      #hdcc {
+        position: absolute;
+        top: 2950px;
+      }
+      #hycx {
+        position: absolute;
+        top: 3700px;
+      }
+      #xndl {
+        position: absolute;
+        top: 4600px;
+      }
+    }
+ .sbxt {
+      width: 1015px;
+      float: left;
+      // height: 3400px;
+      margin-right: 25px;
+      .hdty1 {
+        background: rgba(255, 252, 252, 1);
+        box-shadow: 0px 2px 6px 0px rgba(173, 173, 173, 0.4);
+        border-radius: 10px;
+        margin-bottom: 40px;
+        // border: none;
+        // padding: 0;
+      }
+      #dzsb {
+        position: absolute;
+        top: 0;
+      }
+      #rlsb {
+        position: absolute;
+        top: 980px;
+      }
+
+    }
+ .zq {
+      width: 1015px;
+      float: left;
+      // height: 3400px;
+      margin-right: 25px;
+      .hdty1 {
+        background: rgba(255, 252, 252, 1);
+        box-shadow: 0px 2px 6px 0px rgba(173, 173, 173, 0.4);
+        border-radius: 10px;
+        margin-bottom: 40px;
+        // border: none;
+        // padding: 0;
+      }
+      #xnxs {
+        position: absolute;
+        top: 0;
+      }
+      #zqxs {
+        position: absolute;
+        top: 980px;
+      }
+
     }
 
 
