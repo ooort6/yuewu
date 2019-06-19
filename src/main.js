@@ -7,7 +7,7 @@ import iview from 'iview'
 import Vuex from 'vuex'
 import 'iview/dist/styles/iview.css';
 import axios from 'axios'
-
+import 'swiper/dist/css/swiper.css';
 
 
 axios.defaults.withCredentials = true;

@@ -35,7 +35,6 @@
                 <Card :dis-hover="true" :bordered="false" style="height:298px;padding-top:30px; ">
                   <div
                     style="text-align:center;position:relative"
-                    @click="$router.push({name: 'xinxisafe'})"
                   >
                     <!-- <img src="@/static/image/微信图片_20190604151034.png" style="position:absolute;top:40%; color:#00366F;font-size:24px; left:32%" alt="">
                     <img src="@/static/image/1.png">
@@ -58,7 +57,6 @@
                 <Card :dis-hover="true" :bordered="false" style="height:298px;padding-top:30px; ">
                   <div
                     style="text-align:center;position:relative"
-                    @click="$router.push({name: 'xinxisafe'})"
                   >
                     <!-- <img src="@/static/image/微信图片_20190604151034.png" style="position:absolute;top:40%; color:#00366F;font-size:24px; left:32%" alt="">
                     <img src="@/static/image/1.png">
@@ -81,7 +79,6 @@
                 <Card :dis-hover="true" :bordered="false" style="height:298px;padding-top:30px; ">
                   <div
                     style="text-align:center;position:relative"
-                    @click="$router.push({name: 'xinxisafe'})"
                   >
                     <!-- <img src="@/static/image/微信图片_20190604151034.png" style="position:absolute;top:40%; color:#00366F;font-size:24px; left:32%" alt="">
                     <img src="@/static/image/1.png">
@@ -111,7 +108,7 @@
       <div class="case">
         <Row :gutter="16" justify="space-around" class="card" style="padding:20px;border:none">
           <i-col class="i-col" span="5" offset="4" style="margin-right:18px">
-            <div @click="$router.push({name: 'product_5'})">
+            <div @click="$router.push({name: 'control', params: { ins:0}})">
               <!-- <img src="../../static/images/1.00.png" alt=""> -->
               <Card shadow>
                 <img src="../../static/images/1.00.png" alt>
@@ -122,7 +119,7 @@
             </div>
           </i-col>
           <i-col class="i-col" span="5" offset="1" style="margin-right:18px">
-            <div @click="$router.push({name: 'product_6'})">
+            <div @click="$router.push({name: 'control', params: { ins:1}})">
               <Card shadow>
                 <img src="../../static/images/2.00.png" alt>
                 <div class="mask"></div>
@@ -132,7 +129,7 @@
             </div>
           </i-col>
           <i-col class="i-col" span="5" offset="1" style="margin-right:18px;margin-bottom:2%">
-            <div @click="$router.push({name: 'product_7'})">
+            <div @click="$router.push({name: 'control', params: { ins:2}})">
               <Card shadow>
                 <img src="../../static/images/3.00.png" alt>
                 <div class="mask"></div>
@@ -143,7 +140,7 @@
           </i-col>
 
           <i-col class="i-col" span="5" offset="7" style="margin-right:18px">
-            <div @click="$router.push({name: 'product_5'})">
+            <div @click="$router.push({name: 'control', params: { ins:3}})">
               <Card shadow>
                 <img src="../../static/images/4.00.png" alt>
                 <div class="mask"></div>
@@ -154,7 +151,7 @@
             </div>
           </i-col>
           <i-col class="i-col" span="5" offset="1" style="margin-right:18px">
-            <div @click="$router.push({name: 'product_5'})">
+            <div @click="$router.push({name: 'control', params: { ins:4}})">
               <Card shadow>
                 <img src="../../static/images/5.00.png" alt>
                 <div class="mask"></div>

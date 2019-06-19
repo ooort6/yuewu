@@ -3,7 +3,7 @@
       <div style="background:#fff;width:50%;margin:0 auto;padding:20px;">
 
      
-      <span style="text-align:center;display:block;color:#172A88;font-size:36px;margin-bottom:5%">贵公司基本信息</span>
+      <span style="text-align:center;display:block;color:#ECB101;font-size:36px;margin-bottom:5%">贵公司基本信息</span>
     <Form
       ref="formValidate"
       :model="formValidate"
@@ -18,12 +18,18 @@
         <Input v-model="formValidate.money"></Input>
       </FormItem>
       <FormItem label="成立时间" prop="ctime">
-        <Input :disabled="aa" v-model="formValidate.ctime"></Input>
+        <Input  v-model="formValidate.ctime"></Input>
       </FormItem>
       <FormItem label="意向合作行业" prop="gender">
         <RadioGroup v-model="formValidate.gender">
-          <Radio label="male">Male</Radio>
-          <Radio label="female">Female</Radio>
+          <Radio label="zf">政府</Radio>
+          <Radio label="jr">金融</Radio>
+            <Radio label="jy">教育</Radio>
+          <Radio label="ny">能源</Radio>
+            <Radio label="yys">运营商</Radio>
+          <Radio label="qy">企业</Radio>
+          <Radio label="qt">其他</Radio>
+
         </RadioGroup>
       </FormItem>
       <FormItem label="联系人" prop="contacts">
@@ -55,9 +61,9 @@
       <FormItem label="公司业务简介" prop="desc">
         <Input v-model="formValidate.desc" type="textarea" :autosize="{minRows: 2,maxRows: 5}"></Input>
       </FormItem>
-      <FormItem>
-        <Button type="primary" @click="handleSubmit('formValidate')">提交</Button>
-        <Button @click="handleReset('formValidate')" style="margin-left: 8px">重置</Button>
+      <FormItem >
+        <Button class="btn1" @click="handleSubmit('formValidate')">提交</Button>
+        <Button class="btn2" @click="handleReset('formValidate')" style="margin-left: 8px">重置</Button>
       </FormItem>
     </Form>
   </div>
@@ -77,7 +83,7 @@ export default {
       }
     };
     return {
-        aa:false,
+        // aa:false,
 
       formValidate: {
         name: "",
@@ -165,6 +171,19 @@ export default {
   width: 100%;
   background: #f6f6f6;
   margin: 0 auto;
+  .btn1{
+
+//     width:77px;
+// height:45px;
+background:rgba(38,32,34,1);
+color: #fff;
+  }
+    .btn2{
+    // width:77px;
+// height:45px;
+color: #585858;
+background:#C4C4C4;
+  }
 }
 </style>
 

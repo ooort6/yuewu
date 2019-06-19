@@ -86,6 +86,30 @@ export default [
     component: () =>import ('@/views/goodsList/success/success')
   },
   {
+    path: '/success_sh',
+    name: 'success_sh',
+    meta:{
+      title:'成功案例_sh'
+    },
+    component: () =>import ('@/views/goodsList/success/success_sh')
+  },
+  {
+    path: '/success_yn',
+    name: 'success_yn',
+    meta:{
+      title:'成功案例_yn'
+    },
+    component: () =>import ('@/views/goodsList/success/success_yn')
+  },
+  {
+    path: '/success_tj',
+    name: 'success_tj',
+    meta:{
+      title:'成功案例_tj'
+    },
+    component: () =>import ('@/views/goodsList/success/success_tj')
+  },
+  {
     path: '/formDemo',
     name: 'formDemo',
     meta:{

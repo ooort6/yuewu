@@ -3,7 +3,7 @@
     <BackTop :height="0" :right="3" :bottom="704">
       <div class="top">
         <img
-          src="../../static/image/TOP.png"
+          src="../../static/images/top.png"
           style=" position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"
           alt
         >
@@ -12,15 +12,15 @@
     </BackTop>
     <div id="dg" class="top" style=" bottom: 642px; z-index:2">
       <img
-        src="../../static/image/TOP.png"
-        style=" position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"
+        src="../../static/images/top.png"
+        style=" position: absolute;color:#121212;top: 50%;left: 50%;transform: translate(-50%, -50%);"
         alt
       >
 
     </div>
-    <div id="dg" class="top" style=" bottom: 580px;" @click="$router.push({name: 'shouqian'})">
+    <div id="dg" class="top" style=" bottom: 580px;" @click="$router.push({name: 'shouhou'})">
       <img
-        src="../../static/image/售前咨询 (1).png"
+        src="../../static/images/sqzx.png"
         style=" position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);"
         alt
       >
@@ -28,41 +28,23 @@
         售前咨询
       </span>
     </div>
-    <div id="dg" class="top" style=" bottom: 518px;" @click="$router.push({name: 'shouhou'})"> 
+  
+    <div id="dg" class="top" style=" bottom: 518px;" @click="$router.push({name: 'hezuoform'})">
       <img
-        src="../../static/image/售后咨询.png"
+        src="../../static/images/sqhz.png"
         style=" position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);"
-        alt
-      >
-      <span style="color:#333333;font-size:1px;display:block; margin-top:70%">
-        售后咨询
-      </span>
-    </div>
-    <div id="dg" class="top" style=" bottom: 456px;" @click="$router.push({name: 'hezuoform'})">
-      <img
-        src="../../static/image/合作.png"
-        style=" position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);"
-        alt
+        alt     
       >
       <span style="color:#333333;font-size:1px;display:block; margin-top:70%">
         申请合作
       </span>
     </div>
-    <div id="dg" class="top" style=" bottom: 394px;" @click="$router.push({name: 'formDemo'})">
-      <img
-        src="../../static/image/资料中心.png"
-        style=" position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);"
-        alt
-      >
-      <span style="color:#333333;font-size:1px;display:block; margin-top:70%">
-        资料中心
-      </span>
-    </div>
-    <div id="dg" class="top1" style=" bottom: 332px;" @click="$router.push({name: 'shouhou'})" >
+   
+    <div id="dg" class="top1" style=" bottom: 456px;" @click="$router.push({name: 'shouhou'})" >
     <!-- <div id="dg" class="top" style=" bottom: 325px;"  @click="instance('success')"> -->
 
       <img
-        src="../../static/image/联系我们.png"
+        src="../../static/images/lxwm.png"
         style=" position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);"
         alt
       >

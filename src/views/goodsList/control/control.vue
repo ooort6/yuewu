@@ -382,7 +382,7 @@ export default {
   name: "control",
   data() {
     return {
-      ins: 0,
+      ins:this.$route.params.ins?this.$route.params.ins:0,
       items: [
         { id: "智慧展厅控制系统" },
         { id: "高精度定位系统" },
